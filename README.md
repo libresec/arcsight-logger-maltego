@@ -28,4 +28,5 @@ SOAP-related needs.
 Thanks
 -----------------
 Paterva (@Paterva)<br/>
-@bostonlink 
+@bostonlink<br/>
+@ph1lv -- Thanks for the ideas!
