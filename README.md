@@ -12,13 +12,15 @@ aslMaltego.conf
 Configuration that holds ArcSight Logger username, password, and server information.
 NOTE - The logger API only seems to work with local authentication.
 
-
 Transforms
 --------------------
 maltego.IPv4Address (Entity)
 
 	aslFireEye.py
 
+FireEyeMalwareEvent.mtz
+--------------------
+Export of custom entity returned by aslFireEye.py transform.
 
 Dependencies 
 -------------
