@@ -1,7 +1,7 @@
 '''
 @author: libresec
 '''
-import suds, sys, time
+import suds, time, sys
 from suds.xsd.doctor import Import, ImportDoctor
 from datetime import datetime, timedelta
 
@@ -73,9 +73,9 @@ def loggerLogout(client, cookie):
     except:
         errors(1)
 
-def loggerSearch(clientIn, cookie, queryIn):
+def loggerSearch(clientIn, cookie, queryIn, timeIn):
     #search timeframe
-    start = int(time.mktime((datetime.now() - timedelta(minutes=800)).timetuple())) * 1000
+    start = int(time.mktime((datetime.now() - timedelta(hours=timeIn)).timetuple())) * 1000
     end = int(time.mktime((datetime.now()).timetuple())) * 1000
     
     #starts the search
@@ -106,9 +106,8 @@ def errors(typeIn):
     print "   <Entities>"
     print "   </Entities>"
     print "   <UIMessages>"
-    print "       <UIMessage MessageType=\"PartialError\">%s</UIMessage>" % text
+    print "       <UIMessage MessageType=\"PartialError\"> %s</UIMessage>" % text
     print "   </UIMessages>"
     print "</MaltegoTransformResponseMessage>\n</MaltegoMessage>"
     
     sys.exit(0)
-
