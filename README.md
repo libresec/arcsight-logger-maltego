@@ -1,7 +1,11 @@
+# About
 aslMaltego
-==========
 ArcSight Logger / Maltego Integration
 
+# Notes
+This will be rewritten in the near future.
+
+# Transforms
 aslMaltego.py 
 ----------------
 Module that handles communications with ArcSight logger, including authentication, 
@@ -22,8 +26,7 @@ FireEyeMalwareEvent.mtz
 --------------------
 Export of custom entity returned by aslFireEye.py transform.
 
-Dependencies 
--------------
+# Dependencies 
 These transforms have been tested in Mac OSX using Python 2.7. In addition, SUDS is used 
 SOAP-related needs.
 
